@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import RQSuperHeroPage from "./components/RQSuperHero.page";
 import ParallelQueriesPage from "./components/ParallelQueries.page";
+import PaginatedQueriesPage from "./components/PaginatedQueries.page";
 
 function App() {
   const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ function App() {
             element={<RQSuperHeroPage />}
           />
           <Route path="/rq-parallel" element={<ParallelQueriesPage />} />
+          <Route path="/rq-paginated" element={<PaginatedQueriesPage />} />
         </Routes>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
