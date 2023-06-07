@@ -8,6 +8,7 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import RQSuperHeroPage from "./components/RQSuperHero.page";
 import ParallelQueriesPage from "./components/ParallelQueries.page";
 import PaginatedQueriesPage from "./components/PaginatedQueries.page";
+import InfiniteQueriesPage from "./components/InfiniteQueries.page";
 
 function App() {
   const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ function App() {
           />
           <Route path="/rq-parallel" element={<ParallelQueriesPage />} />
           <Route path="/rq-paginated" element={<PaginatedQueriesPage />} />
+          <Route path="/rq-infinite" element={<InfiniteQueriesPage />} />
         </Routes>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
