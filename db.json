@@ -15,5 +15,19 @@
       "name": "Wonder Woman",
       "alterEgo": "Princess Diana"
     }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Seo ji won"
+    },
+    {
+      "id": 2,
+      "name": "Heo yi won"
+    },
+    {
+      "id": 3,
+      "name": "Deo zi won"
+    }
   ]
 }
