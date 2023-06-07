@@ -8,7 +8,6 @@ function SuperHeroesPage() {
   useEffect(() => {
     (async () => {
       const res = await axios.get("http://localhost:4000/superheroes");
-      console.log(res.data);
       setData(res.data);
       setIsLoading(false);
     })();
